@@ -22,6 +22,17 @@ export const AppContextProvider = ({children}) => {
   }
 
   useEffect(()=> { 
+    if(user){
+      fetchUsersChats(); 
+    }
+    else{ 
+      setChats([]);
+      setSelectedChat(null); 
+    }
+    
+  },[user])
+
+  useEffect(()=> { 
     if(theme == 'dark') { 
       document.documentElement.classList.add("dark"); 
     }
