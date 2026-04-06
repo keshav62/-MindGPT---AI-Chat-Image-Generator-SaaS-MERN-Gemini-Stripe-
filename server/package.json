@@ -24,6 +24,7 @@
     "mongoose": "^9.3.3",
     "openai": "^6.33.0",
     "strip": "^3.0.0",
+    "stripe": "^22.0.0",
     "svix": "^1.90.0"
   },
   "devDependencies": {
