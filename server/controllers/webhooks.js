@@ -2,7 +2,6 @@
 import Stripe from "stripe";
 import Transaction from "../models/Transaction.js";
 import User from "../models/User.js";
-import e from "express";
 
 export const stripeWebhooks = async (request,response)=> { 
   const stripe = new Stripe(process.env.STRIP_WEBHOOK_SECRET); 
@@ -34,10 +33,11 @@ export const stripeWebhooks = async (request,response)=> {
 
           //update credit payment status
           transaction.isPaid = true; 
+          console.log(transaction); 
           await transaction.save(); 
         }
         else { 
-          return response.json({received: true, messasge : "Ignored event: Invalid app"});
+          return response.json({received: true, message : "Ignored event: Invalid app"});
         }
         break; 
       }
