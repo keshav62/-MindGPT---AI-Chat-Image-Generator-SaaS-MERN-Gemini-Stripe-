@@ -1,4 +1,6 @@
-# 🧠 MindGPT
+#🧠 MindGPT — Full-Stack AI SaaS built with MERN Stack. Features AI chat (Gemini), text-to-image generation (ImageKit), voice-to-text input, Stripe credit system, JWT auth & dark mode.
+
+
 
 **MindGPT** is a full-stack AI-powered chat application that supports **text generation** and **AI image generation**. It features a credit-based system powered by **Stripe**, AI text responses via **Google Gemini**, and AI image generation via **ImageKit**. Users can publish generated images to a shared community gallery.
 
