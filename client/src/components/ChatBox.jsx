@@ -6,10 +6,10 @@ import toast from 'react-hot-toast';
 
 // ── Prompt Suggestions ────────────────────────────────────────────────────────
 const SUGGESTIONS = [
-  { icon: '✦', label: 'Write a poem about space', mode: 'text' },
-  { icon: '🎨', label: 'Generate a futuristic city at night', mode: 'image' },
-  { icon: '💡', label: 'Explain quantum computing simply', mode: 'text' },
-  { icon: '🖥️', label: 'Write a React todo app with hooks', mode: 'text' },
+  { icon: '₿', label: 'What is Bitcoin and how does it work?', mode: 'text' },
+  { icon: '🎨', label: 'Generate a futuristic crypto city art', mode: 'image' },
+  { icon: '📈', label: 'Explain DeFi and yield farming simply', mode: 'text' },
+  { icon: '🔮', label: 'What are the top altcoins to watch?', mode: 'text' },
 ];
 
 function ChatBox() {
@@ -160,10 +160,10 @@ function ChatBox() {
             </div>
 
             <p className='text-3xl sm:text-5xl font-light text-center bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent'>
-              Ask me anything.
+              Ask me about Crypto. 🪙
             </p>
             <p className='text-sm text-gray-400 dark:text-gray-500 -mt-2'>
-              Start a conversation — text, image, or voice
+              Bitcoin • Ethereum • DeFi • NFTs • Web3 — your crypto guru is here!
             </p>
 
             {/* ── Suggestion Cards ── */}
@@ -326,7 +326,7 @@ function ChatBox() {
         </form>
 
         <p className='text-center text-xs text-gray-400 dark:text-gray-600 mt-2'>
-          MindGPT can make mistakes. Consider verifying important info.
+          CryptoBaba gives crypto insights only. Not financial advice — always DYOR! 🧠
         </p>
       </div>
     </div>
