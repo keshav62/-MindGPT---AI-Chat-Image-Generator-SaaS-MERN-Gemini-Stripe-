@@ -167,10 +167,10 @@ MindGPT/
 
 | Method | Endpoint | Auth | Description |
 |--------|----------|------|-------------|
-| `POST` | `/api/user/register` | ❌ | Register a new user |
-| `POST` | `/api/user/login` | ❌ | Login and get JWT token |
+| `POST` | `/api/user/register` | ✅ | Register a new user |
+| `POST` | `/api/user/login` | ✅ | Login and get JWT token |
 | `GET` | `/api/user/data` | ✅ | Get authenticated user's data |
-| `GET` | `/api/user/published-images` | ❌ | Fetch all published community images |
+| `GET` | `/api/user/published-images` | ✅ | Fetch all published community images |
 
 ---
 
@@ -214,7 +214,7 @@ MindGPT/
 
 | Method | Endpoint | Auth | Description |
 |--------|----------|------|-------------|
-| `GET` | `/api/credit/plan` | ❌ | Get all available credit plans |
+| `GET` | `/api/credit/plan` | ✅ | Get all available credit plans |
 | `POST` | `/api/credit/purchase` | ✅ | Create Stripe Checkout session for a plan |
 
 **Request body for `/api/credit/purchase`:**
