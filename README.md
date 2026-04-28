@@ -232,7 +232,7 @@ MindGPT/
 |--------|----------|------|-------------|
 | `POST` | `/api/stripe` | Stripe Sig | Handles `payment_intent.succeeded` to fulfill credits |
 
-> ⚠️ This route uses raw body parsing (`express.raw`) and must be registered **before** `express.json()`.
+
 
 ---
 
